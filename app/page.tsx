@@ -1,11 +1,36 @@
+import { Poppins } from "next/font/google";
+
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+
+const font = Poppins({
+  subsets: ["latin"],
+  weight: ["600"],
+});
 
 export default function Home() {
   return (
-    <p className="font-bold text-green-300">
-      <Button variant="link">
-        Click me!
-      </Button>
-    </p>
+    <main
+      className={cn(
+        "flex h-full flex-col items-center justify-center",
+        "bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]",
+        "from-sky-400 to-sky-800"
+      )}
+    >
+      <div className="space-y-6 text-center">
+        <h1 className={cn(
+          "text-6xl font-semibold text-drop-shadow-md text-white",
+          font.className
+        )}>
+          🔒Auth
+        </h1>
+        <p className="text-lg text-white">
+          A simple authentication service
+        </p>
+        <div>
+          <Button variant="secondary">Sign in</Button>
+        </div>
+      </div>
+    </main>
   );
 }
