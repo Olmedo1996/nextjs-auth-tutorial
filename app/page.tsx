@@ -29,7 +29,7 @@ export default function Home() {
           A simple authentication service
         </p>
         <div>
-          <LoginButton mode="modal">
+          <LoginButton>
             <Button variant="secondary">Sign in</Button>
           </LoginButton>
         </div>
