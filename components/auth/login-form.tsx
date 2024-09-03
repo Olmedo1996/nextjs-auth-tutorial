@@ -55,10 +55,8 @@ export const LoginForm = () => {
                                     <FormControl>
                                         <Input
                                             type="email"
-                                            /* autoComplete="email" */
                                             {...field}
                                             placeholder="joel@me.com"
-                                            /* className="w-full" */
                                         />
                                     </FormControl>
                                     <FormDescription>
@@ -79,12 +77,8 @@ export const LoginForm = () => {
                                             type="password"
                                             {...field}
                                             placeholder="******"
-                                            /* className="w-full" */
                                         />
                                     </FormControl>
-                                    {/* <FormDescription>
-                                        Your password must be at least 6 characters.
-                                    </FormDescription> */}
                                     <FormMessage />
                                 </FormItem>
                             )}
